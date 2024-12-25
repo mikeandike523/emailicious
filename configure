@@ -1,0 +1,25 @@
+#!/bin/bash
+
+script_dir="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
+
+cd "$script_dir"
+
+if [ ! -d ".venv" ]; then
+    echo "Creating virtual environment..."
+    python3 -m venv .venv
+    echo "Virtual environment created."
+else
+    echo "Virtual environment already exists."
+fi
+
+source .venv/bin/activate
+pip install pipenv
+deactivate
+
+
+chmod +x __pipenv
+chmod +x __python
+chmod +x __pylint
+
+./__pipenv install --dev pylint
+
