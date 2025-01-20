@@ -129,18 +129,8 @@ a:visited {
     */
 }
 
-img,
-picture {
-  max-width: 100%; /* Ensure images scale appropriately */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/*  Encourage readability
-    Note: If you need ultra precise centered text
-    consider overriding where needed with 1em
-*/
 *,
 *:before,
 *:after {
-  line-height: 1.5em;
+  line-height: 1em;
 }

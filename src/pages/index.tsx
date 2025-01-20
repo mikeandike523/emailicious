@@ -1,22 +1,18 @@
-import Head from "next/head";
-import { Div, Nav, Main } from "style-props-html";
+import { Main, H1, H2, A, P } from "style-props-html";
+import PageSetup from "@/layouts/PageSetup";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>STEAMHelp Pittsburgh</title>
-        <meta
-          name="description"
-          content="Private STEAM Tutoring in Pittsburgh, PA"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Div width="100%">
-        <Nav width="100%"></Nav>
-        <Main width="100%"></Main>
-      </Div>
-    </>
+    <PageSetup>
+      <Main>
+        <H1>Emailicious</H1>
+        <H2>Mmm... Delicious Emails</H2>
+        <P>
+          Emailicious is a command line tool to automatically manage emails in
+          bulk.
+        </P>
+        <A href="/tutorial">Tutorial</A>
+      </Main>
+    </PageSetup>
   );
 }

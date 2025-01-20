@@ -17,13 +17,18 @@
     {
       "name": "properNouns",
       "path": "./.vscode/dictionaries/proper-nouns.txt"
+    },
+    {
+      "name": "errantDetections",
+      "path": "./.vscode/dictionaries/errant-detections.txt"
     }
   ],
   "dictionaries": [
     "generalTerms",
     "programmingTerms",
     "projectTerms",
-    "properNouns"
+    "properNouns",
+    "errantDetections"
   ],
   "ignorePaths": ["cspell.json", "Pipfile"],
   "useGitignore": true
